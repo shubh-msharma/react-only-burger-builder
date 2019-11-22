@@ -1,0 +1,46 @@
+.toolbar{
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 70px;
+    width:100%;
+    background-color: rgb(216, 91, 18);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 300;
+}
+.menu{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 0.3s all ease;
+}
+.menu:hover{
+    border: 3px solid rgb(206, 24, 109);
+    background-color: rgba(110, 231, 106, 0.486);
+    color:black;
+    border-radius: 10px;
+
+}
+
+.toolbar nav{
+    height: 100%;
+}
+
+@media (max-width:499px){
+    .desktopOnly{
+        display: none;
+    }
+}
+
+@media (min-width:500px){
+    .mobileOnly{
+        display: none;
+    }
+}
